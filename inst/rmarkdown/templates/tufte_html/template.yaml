@@ -1,5 +1,5 @@
-name: Tufte Handout (HTML or PDF)
+name: IR Blog
 description: >
-  Template for creating a handout according to the style of
+  Template for creating an IR Blog according to the style of
   Edward R. Tufte and Richard Feynman.
-create_dir: false
+create_dir: true

@@ -1,0 +1,92 @@
+#logo {
+    height: 100%;
+    width: auto;
+    max-width: 125px;
+    max-height: 125px;
+  /*box-shadow: 7px 7px 5px grey; */
+}
+/*
+.main-container {
+  border-left: 2px solid #C99700;
+}
+*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+.headSection {
+    width: 100%;
+    height: 100px;
+    background: white;
+    margin: auto;
+    padding: 5px;
+}
+
+#headLeft {
+    width: 50%;
+    height: 100px;
+    background: white;
+    float: left;
+}
+#headRight {
+    margin-left: 50%;
+    height: 100px;
+    background: white;
+}
+*/
+
+.hfSection {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 10px;
+}
+.hfLeft {
+    width: 65%;
+    height: 100px;
+    float: left;
+    border-radius: 25px;
+    background: linear-gradient(100deg, white, white, #C99700, #C99700, #C99700 30%, #463077, #C99700, white, white);
+    border-top-right-radius: 99%;
+    border-top-left-radius: 99%;
+    position: relative;
+
+}
+
+#blogTitle {
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
+.hfRight {
+    margin-left: 25%;
+    height: 100px;
+    background: white;
+}
+
+.footLine {
+    display: block;
+    border: 0;
+    border-top: 4px solid #463077;
+    margin: 2em 0;
+    padding: 0;
+}
+
+.sfsuNote {
+    padding: 1em;
+    margin: 1em 0;
+    padding-left: 100px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    min-height: 80px;
+    color: #463077;
+    font-weight: bold;
+    background-color: #E9D597;
+    border-radius: 15px;
+    /*border: solid 5px #463077;*/
+    background-image: url("Lightbulb.png");
+}
