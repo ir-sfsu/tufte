@@ -1,8 +1,8 @@
 #logo {
-    height: 100%;
-    width: auto;
-    max-width: 125px;
-    max-height: 125px;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: #D6CCA9;
+    z-index: 0;
   /*box-shadow: 7px 7px 5px grey; */
 }
 /*
@@ -11,6 +11,9 @@
 }
 */
 
+body {
+  background-color: #D6CCA9;
+}
 .center {
   display: block;
   margin-left: auto;
@@ -49,7 +52,7 @@
     height: 100px;
     float: left;
     border-radius: 25px;
-    background: linear-gradient(100deg, white, white, #C99700, #C99700, #C99700 30%, #463077, #C99700, white, white);
+    background: linear-gradient(100deg, #D6CCA9, #D6CCA9, #C99700, #C99700, #C99700 30%, #463077, #C99700, #D6CCA9, #D6CCA9);
     border-top-right-radius: 99%;
     border-top-left-radius: 99%;
     position: relative;
@@ -62,7 +65,7 @@
 }
 
 .hfRight {
-    margin-left: 25%;
+    margin-left: 75%;
     height: 100px;
     background: white;
 }
@@ -89,4 +92,16 @@
     border-radius: 15px;
     /*border: solid 5px #463077;*/
     background-image: url("Lightbulb.png");
+}
+
+a {
+  color: #B04A5A;
+}
+
+a:hover {
+  color: #9A3324;
+}
+
+a:visited {
+  color: #53565A;
 }

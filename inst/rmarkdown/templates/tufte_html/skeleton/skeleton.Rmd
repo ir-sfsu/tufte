@@ -41,7 +41,12 @@ ggplot(mtcars2, aes(hp, mpg, color = am)) +
   geom_point() + geom_smooth() +
   theme(legend.position = 'bottom') +
   scale_color_sfsu() +
-  theme_sfsu()
+  theme_sfsu() +
+  theme(
+    panel.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9'),
+    plot.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9'),
+    legend.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9')
+  )
 ```
 
 ## Arbitrary Margin Content
@@ -61,7 +66,12 @@ You can arrange for figures to span across the entire page by using the chunk op
 ggplot(diamonds, aes(carat, price)) + 
   geom_smooth(color = "#9A3324") +
   facet_grid(~ cut) +
-  theme_sfsu()
+  theme_sfsu() +
+  theme(
+    panel.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9'),
+    plot.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9'),
+    legend.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9')
+  )
 ```
 
 ## Main Column Figures
@@ -69,7 +79,11 @@ ggplot(diamonds, aes(carat, price)) +
 Besides margin and full width figures, you can of course also include figures constrained to the main column. This is the default type of figures in the LaTeX/HTML output.
 
 ```{r fig-main, fig.cap = "A figure in the main column.", cache=TRUE}
-ggplot(diamonds, aes(cut, price)) + geom_boxplot() + theme_sfsu()
+ggplot(diamonds, aes(cut, price)) + geom_boxplot() + theme_sfsu() + theme(
+    panel.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9'),
+    plot.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9'),
+    legend.background = element_rect(fill = '#D6CCA9', colour = '#D6CCA9')
+  )
 ```
 
 :::sfsuNote
@@ -98,5 +112,5 @@ Use `>` for block quotes. If you want to add a right-aligned footer for the quot
 
 > "When the people shall have nothing more to eat, they will eat the rich."
 >
-> `r tufte::quote_footer('--- Jean Jacques Rossaeau')`
+> `r tufte::quote_footer('--- Jean Jacques Rousseau')`
 
